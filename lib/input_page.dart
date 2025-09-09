@@ -1,5 +1,5 @@
-import 'package:bmi/icon_content.dart';
-import 'package:bmi/reusable_card.dart';
+import 'package:bmi_calculator_flutter/icon_content.dart';
+import 'package:bmi_calculator_flutter/reusable_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -37,10 +37,9 @@ class _InputPageState extends State<InputPage> {
                         selectedGender = Gender.male;
                       });
                     },
-                    color:
-                        selectedGender == Gender.male
-                            ? activeCardColor
-                            : inactiveCardColor,
+                    color: selectedGender == Gender.male
+                        ? activeCardColor
+                        : inactiveCardColor,
                     cardChild: IconContent(
                       icon: FontAwesomeIcons.mars,
                       label: 'MALE',
@@ -54,10 +53,9 @@ class _InputPageState extends State<InputPage> {
                         selectedGender = Gender.female;
                       });
                     },
-                    color:
-                        selectedGender == Gender.female
-                            ? activeCardColor
-                            : inactiveCardColor,
+                    color: selectedGender == Gender.female
+                        ? activeCardColor
+                        : inactiveCardColor,
                     cardChild: IconContent(
                       icon: FontAwesomeIcons.venus,
                       label: 'FEMALE',
